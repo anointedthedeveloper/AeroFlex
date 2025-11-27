@@ -4,7 +4,7 @@ A modern, responsive e-commerce website for premium athletic footwear featuring 
 
 ## 🚀 Live Preview
 
-**[View Live Demo](https://anointedthedeveloper.github.io/AeroFlex-Performance-Sneakers/)**
+**[View Live Demo](https://anointedthedeveloper.github.io/AeroFlex/)**
 
 Experience the full website in action on GitHub Pages!
 
