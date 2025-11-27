@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse our collection of premium performance sneakers">
+    <title>Products - AeroFlex Performance Sneakers</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar-custom glass fixed-top">
+        <div class="container-fluid px-4">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-bolt"></i>
+                    <span>AeroFlex</span>
+                </a>
+                
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html" class="active">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                
+                <button class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html" class="active">Products</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" id="hero" style="min-height: 60vh;">
+            <div class="hero-background"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title gradient-text fade-in">Our Collection</h1>
+                    <p class="hero-subtitle fade-in">
+                        Premium performance sneakers engineered for every athlete
+                    </p>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </section>
+
+        <!-- Products Grid Section -->
+        <section class="featured-products py-5">
+            <div class="container">
+                <div class="section-header text-center mb-5">
+                    <h2 class="gradient-text">All Products</h2>
+                    <p>Explore our complete range of performance footwear</p>
+                </div>
+                
+                <div class="row g-4">
+                    <!-- Product 1 -->
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="product-card">
+                            <div class="product-image">
+                                <div class="product-badge">New</div>
+                                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500&q=80" alt="AeroFlex Velocity Pro">
+                                <div class="product-overlay">
+                                    <button class="btn-quick-view ripple-btn">Quick View</button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h4>AeroFlex Velocity Pro</h4>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span>(342)</span>
+                                </div>
+                                <div class="product-colors">
+                                    <span class="color-dot" style="background: #00D4FF;"></span>
+                                    <span class="color-dot" style="background: #39FF14;"></span>
+                                    <span class="color-dot" style="background: #0A0A0A;"></span>
+                                </div>
+                                <div class="product-footer">
+                                    <span class="product-price">$189.99</span>
+                                    <button class="btn-add-cart ripple-btn">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 2 -->
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="product-card">
+                            <div class="product-image">
+                                <div class="product-badge hot">Hot</div>
+                                <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=500&q=80" alt="Thunder Strike Elite">
+                                <div class="product-overlay">
+                                    <button class="btn-quick-view ripple-btn">Quick View</button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h4>Thunder Strike Elite</h4>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span>(528)</span>
+                                </div>
+                                <div class="product-colors">
+                                    <span class="color-dot" style="background: #FF0080;"></span>
+                                    <span class="color-dot" style="background: #FFFFFF;"></span>
+                                    <span class="color-dot" style="background: #FFD700;"></span>
+                                </div>
+                                <div class="product-footer">
+                                    <span class="product-price">$219.99</span>
+                                    <button class="btn-add-cart ripple-btn">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 3 -->
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=500&q=80" alt="Quantum Boost X">
+                                <div class="product-overlay">
+                                    <button class="btn-quick-view ripple-btn">Quick View</button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h4>Quantum Boost X</h4>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>(287)</span>
+                                </div>
+                                <div class="product-colors">
+                                    <span class="color-dot" style="background: #B026FF;"></span>
+                                    <span class="color-dot" style="background: #00D4FF;"></span>
+                                </div>
+                                <div class="product-footer">
+                                    <span class="product-price">$169.99</span>
+                                    <button class="btn-add-cart ripple-btn">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 4 -->
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="product-card">
+                            <div class="product-image">
+                                <div class="product-badge sale">Sale</div>
+                                <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=500&q=80" alt="Neon Flash Runner">
+                                <div class="product-overlay">
+                                    <button class="btn-quick-view ripple-btn">Quick View</button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h4>Neon Flash Runner</h4>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span>(412)</span>
+                                </div>
+                                <div class="product-colors">
+                                    <span class="color-dot" style="background: #39FF14;"></span>
+                                    <span class="color-dot" style="background: #FF6B00;"></span>
+                                </div>
+                                <div class="product-footer">
+                                    <span class="product-price">$149.99 <del>$199.99</del></span>
+                                    <button class="btn-add-cart ripple-btn">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 5 -->
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2?w=500&q=80" alt="Apex Runner Pro">
+                                <div class="product-overlay">
+                                    <button class="btn-quick-view ripple-btn">Quick View</button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h4>Apex Runner Pro</h4>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span>(456)</span>
+                                </div>
+                                <div class="product-colors">
+                                    <span class="color-dot" style="background: #FF0000;"></span>
+                                    <span class="color-dot" style="background: #0A0A0A;"></span>
+                                </div>
+                                <div class="product-footer">
+                                    <span class="product-price">$199.99</span>
+                                    <button class="btn-add-cart ripple-btn">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 6 -->
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="product-card">
+                            <div class="product-image">
+                                <div class="product-badge">New</div>
+                                <img src="https://images.unsplash.com/photo-1460353581641-37baddab0fa2?w=500&q=80" alt="Stealth Mode X">
+                                <div class="product-overlay">
+                                    <button class="btn-quick-view ripple-btn">Quick View</button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h4>Stealth Mode X</h4>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span>(298)</span>
+                                </div>
+                                <div class="product-colors">
+                                    <span class="color-dot" style="background: #0A0A0A;"></span>
+                                    <span class="color-dot" style="background: #808080;"></span>
+                                </div>
+                                <div class="product-footer">
+                                    <span class="product-price">$179.99</span>
+                                    <button class="btn-add-cart ripple-btn">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 7 -->
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?w=500&q=80" alt="Urban Sprint">
+                                <div class="product-overlay">
+                                    <button class="btn-quick-view ripple-btn">Quick View</button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h4>Urban Sprint</h4>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>(367)</span>
+                                </div>
+                                <div class="product-colors">
+                                    <span class="color-dot" style="background: #FFFFFF;"></span>
+                                    <span class="color-dot" style="background: #00D4FF;"></span>
+                                    <span class="color-dot" style="background: #FF0080;"></span>
+                                </div>
+                                <div class="product-footer">
+                                    <span class="product-price">$159.99</span>
+                                    <button class="btn-add-cart ripple-btn">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 8 -->
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="product-card">
+                            <div class="product-image">
+                                <div class="product-badge hot">Hot</div>
+                                <img src="https://images.unsplash.com/photo-1539185441755-769473a23570?w=500&q=80" alt="Turbo Charge">
+                                <div class="product-overlay">
+                                    <button class="btn-quick-view ripple-btn">Quick View</button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h4>Turbo Charge</h4>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span>(589)</span>
+                                </div>
+                                <div class="product-colors">
+                                    <span class="color-dot" style="background: #FFD700;"></span>
+                                    <span class="color-dot" style="background: #0A0A0A;"></span>
+                                </div>
+                                <div class="product-footer">
+                                    <span class="product-price">$209.99</span>
+                                    <button class="btn-add-cart ripple-btn">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 9 -->
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="product-card">
+                            <div class="product-image">
+                                <div class="product-badge sale">Sale</div>
+                                <img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=500&q=80" alt="Cloud Walker">
+                                <div class="product-overlay">
+                                    <button class="btn-quick-view ripple-btn">Quick View</button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h4>Cloud Walker</h4>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span>(423)</span>
+                                </div>
+                                <div class="product-colors">
+                                    <span class="color-dot" style="background: #FFFFFF;"></span>
+                                    <span class="color-dot" style="background: #C0C0C0;"></span>
+                                </div>
+                                <div class="product-footer">
+                                    <span class="product-price">$139.99 <del>$189.99</del></span>
+                                    <button class="btn-add-cart ripple-btn">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 10 -->
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?w=500&q=80" alt="Flex Trainer">
+                                <div class="product-overlay">
+                                    <button class="btn-quick-view ripple-btn">Quick View</button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h4>Flex Trainer</h4>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>(312)</span>
+                                </div>
+                                <div class="product-colors">
+                                    <span class="color-dot" style="background: #39FF14;"></span>
+                                    <span class="color-dot" style="background: #0A0A0A;"></span>
+                                    <span class="color-dot" style="background: #00D4FF;"></span>
+                                </div>
+                                <div class="product-footer">
+                                    <span class="product-price">$174.99</span>
+                                    <button class="btn-add-cart ripple-btn">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 11 -->
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="https://images.unsplash.com/photo-1514989940723-e8e51635b782?w=500&q=80" alt="Marathon Elite">
+                                <div class="product-overlay">
+                                    <button class="btn-quick-view ripple-btn">Quick View</button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h4>Marathon Elite</h4>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span>(634)</span>
+                                </div>
+                                <div class="product-colors">
+                                    <span class="color-dot" style="background: #FF0080;"></span>
+                                    <span class="color-dot" style="background: #00D4FF;"></span>
+                                </div>
+                                <div class="product-footer">
+                                    <span class="product-price">$229.99</span>
+                                    <button class="btn-add-cart ripple-btn">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 12 -->
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="product-card">
+                            <div class="product-image">
+                                <div class="product-badge">New</div>
+                                <img src="https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?w=500&q=80" alt="Velocity Max">
+                                <div class="product-overlay">
+                                    <button class="btn-quick-view ripple-btn">Quick View</button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h4>Velocity Max</h4>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span>(267)</span>
+                                </div>
+                                <div class="product-colors">
+                                    <span class="color-dot" style="background: #B026FF;"></span>
+                                    <span class="color-dot" style="background: #FFFFFF;"></span>
+                                </div>
+                                <div class="product-footer">
+                                    <span class="product-price">$194.99</span>
+                                    <button class="btn-add-cart ripple-btn">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="newsletter-section py-5">
+            <div class="container">
+                <div class="newsletter-container glass-card text-center">
+                    <h2 class="gradient-text mb-3">Can't Decide?</h2>
+                    <p class="mb-4">Our team is here to help you find the perfect sneaker for your needs</p>
+                    <div class="hero-buttons">
+                        <a href="contact.html" class="btn-primary ripple-btn">
+                            Contact Us
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-custom">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>AeroFlex</h3>
+                    <p>Premium performance sneakers engineered for athletes who demand excellence.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe for exclusive offers and updates</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email" required>
+                        <button type="submit" class="btn-gradient">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>Copyright © 2025 AeroFlex Performance Sneakers</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>
